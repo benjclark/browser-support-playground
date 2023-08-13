@@ -1,0 +1,26 @@
+.c-header {
+	position: relative;
+	width: 100%;
+	background:  color('white');
+}
+
+.c-header__content {
+	$spacing: 16;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: $context--container-width;
+	padding: spacing(24) spacing($spacing);
+	@media only screen and (min-width: $context--container-width + $spacing) {
+		padding: spacing(24) 0;
+	}
+}
+
+.c-header__logo {
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+	margin-right: spacing(16);
+}

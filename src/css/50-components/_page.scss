@@ -1,0 +1,55 @@
+// Add branding `research-blue` stripe.
+.c-page-title-wrapper {
+	padding: 0 0 128px 0;
+	max-height: 240px;
+	border-top: spacing(4) solid color('research-blue');
+	background-color: color('research-blue');
+	background: linear-gradient(to right, color('research-blue') 0%, color('universal-blue') 100%);
+}
+
+.c-page-title {
+	max-width: $context--container-width;
+	$spacing: 16;
+	padding: spacing($spacing) 0;
+	margin-right: spacing($spacing);
+	margin-left: spacing($spacing);
+	color: color('white');
+	@media only screen and (min-width: $context--container-width + $spacing) {
+		padding: spacing(24) 0;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.c-page-content {
+	$container-box-shadow: 0 0 4px color('black', 0.2);
+	$container-border-color: color('grey-mid1');
+	$container-border-width-style: 1px solid;
+	$container-background-color: color('white');
+
+	@include from-wide-layout {
+		padding: spacing(24);
+	}
+	@include from-desktop {
+		padding: spacing(48);
+	}
+
+	max-width: $context--container-width;
+	padding: $context--container-padding;
+	margin-right: $context--container-padding;
+	margin-left: $context--container-padding;
+	margin-bottom: $context--container-padding;
+	background-color: $container-background-color;
+	border: $container-border-width-style $container-border-color;
+	box-shadow: $container-box-shadow;
+	@media only screen and (min-width: $context--container-width + $context--container-padding) {
+		margin-right: auto;
+		margin-left: auto;
+		min-height: 80vh;
+	}
+	margin-top: -127px;
+}
+
+.c-page-content-inner {
+	max-width: map-get($context--breakpoints, 'sm') - $context--container-padding;
+}

@@ -1,0 +1,7 @@
+{
+  "response": {
+    "showBanner": true,
+    "enableGlossaryPage": true,
+    "enableVerboseErrorMessages": true
+  }
+}

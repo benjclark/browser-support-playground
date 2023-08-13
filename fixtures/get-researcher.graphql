@@ -1,0 +1,17 @@
+query getResearcherQuery {
+	researcher(id: "4da7525b-a54d-7801-911a-20469fd3045f_SN") {
+		profile {
+			firstname
+		}
+		citations {
+			total
+		}
+		publications {
+			totalFromSN
+			overallUsage {
+				overallDownloads,
+				overallViews
+			}
+		}
+	}
+}

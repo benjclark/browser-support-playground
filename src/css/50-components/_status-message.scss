@@ -1,0 +1,13 @@
+.c-status-message__icon {
+	align-self: flex-start;
+}
+
+// Shift the focus ring to the status message container
+.c-status-message:focus-within {
+	outline: 3px solid $context--focus-color;
+	will-change: transform;
+
+	[tabindex="-1"] {
+		outline: none;
+	}
+}

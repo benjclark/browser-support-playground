@@ -1,0 +1,14 @@
+{
+  "profile": {
+    "snid": "4da7525b-a54d-7801-911a-20469fd3045f_SN",
+    "email_address": "flo.rivals@example.com",
+    "first_name": "Florent",
+    "last_name": "Rivals",
+    "links": [
+      {
+        "idType": "PRID",
+        "id": "f31f4031-4to9-4863-a8a9-d51fd26c7bec"
+      }
+    ]
+  }
+}

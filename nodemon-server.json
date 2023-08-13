@@ -1,0 +1,16 @@
+{
+  "ignore": [
+    "*.test.js",
+    "*.spec.js"
+  ],
+  "watch": [
+    "mocked-backend/",
+    "src/server/",
+    "src/view/",
+    "tooling/",
+    "dist/",
+    "fixtures/"
+  ],
+  "ext": "js,json,hbs",
+  "delay": 1
+}

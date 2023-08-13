@@ -1,0 +1,28 @@
+{
+  "navigation": {
+    "links": [
+      {
+        "text": "Manage cookies / Do not sell my data",
+        "buttonProperties": "data-cc-action=\"preferences\""
+      },
+      {
+        "text": "Accessibility statement",
+        "url": "https://www.springernature.com/gp/info/accessibility"
+      },
+      {
+        "text": "Privacy policy",
+        "url": "https://www.springernature.com/la/legal/privacy-statement/11033522"
+      },
+      {
+        "text": "Terms of use",
+        "url": "https://my-profile.springernature.com/terms-of-use"
+      }
+    ]
+
+  },
+  "image": {
+    "src": "/img/logos/logo-sn-white.svg",
+    "alt": "Springer Nature",
+    "link": "https://www.springernature.com/"
+  }
+}

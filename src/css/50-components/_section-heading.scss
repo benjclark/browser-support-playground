@@ -1,0 +1,5 @@
+.c-section-heading {
+	@include u-h3;
+	border-bottom: 2px solid $context--border-color;
+}
+

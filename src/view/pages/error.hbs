@@ -1,0 +1,32 @@
+{{#> main h1=title }}
+
+	<div class="c-error-card">
+		{{#if message}}
+			<p class="c-error-card__message" data-test="message"><strong>Message</strong>: {{message}}</p>
+			{{#if status}}
+				<p data-test="status-code"><strong>Status code</strong>: {{status}}</p>
+			{{/if}}
+		{{else}}
+			{{#if isClientError}}
+				<div data-test="message">
+					<p class="u-mb-16">The information you’re looking for cannot be found, it may be temporarily unavailable or permanently removed.</p>
+					<p>Try refreshing the page, or returning to <a href="/">our homepage</a>. If the problem continues, please contact us at <a href="mailto:FILL-IN-EMAIL-ADDRESS">FILL IN EMAIL ADDRESS</a>.</p>
+				</div>
+			{{/if}}
+			{{#if isServerError}}
+				<div data-test="message">
+					<p class="u-mb-16">We are working to fix the problem and hope to be up and running shortly. Try to refresh the page or return later.</p>
+					<p>If you need immediate help, please contact us at <a href="mailto:FILL IN EMAIL ADDRESS">FILL IN EMAIL ADDRESS</a>.</p>
+				</div>
+			{{/if}}
+		{{/if}}
+
+		{{#if stack}}
+			<div class="c-error-card__stack" data-test="stack">
+				<p><strong>Note</strong>: You can see the full error because the app is running in development mode:</p>
+				<pre>{{{stack}}}</pre>
+			</div>
+		{{/if}}
+	</div>
+
+{{/main}}

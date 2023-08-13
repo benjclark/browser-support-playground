@@ -1,0 +1,16 @@
+{
+	"extends":[
+		"@springernature/eslint-config",
+		"@springernature/eslint-config/node",
+		"@springernature/eslint-config/jest"
+	],
+	"rules":{
+		"unicorn/no-null": "off",
+		"unicorn/consistent-destructuring": "off"
+	},
+	"parserOptions":{
+		"ecmaVersion":"2018"
+	},
+	"overrides":[],
+	"globals":{}
+}

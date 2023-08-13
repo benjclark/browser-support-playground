@@ -1,0 +1,41 @@
+{{#>main h1=title}}
+
+	{{#latestMetrics}}
+	<section class="c-box u-mb-32" data-test="latest-metrics-section" id="metrics-info">
+		<svg class="c-home-illustration" role="presentation" focusable="false">
+			<use xlink:href="#researcher-notification">
+		</svg>
+		<h2 class="c-section-heading">Latest Springer Nature metrics</h2>
+		<dl class="u-mb-16">
+			<dt class="u-text-bold">Articles</dt>
+			<dd>{{../totalFromSN}}</dd>
+			<dt class="u-text-bold">Total citations</dt>
+			<dd>{{citations}}</dd>
+		</dl>
+		<dl id="more-metrics">
+			<dt class="u-text-bold">Downloads</dt>
+			<dd>{{overallDownloads}}</dd>
+			<dt class="u-text-bold">Views</dt>
+			<dd>{{overallViews}}</dd>
+		</dl>
+	</section>
+	{{/latestMetrics}}
+
+	<section class="c-box" data-test="your-articles-section">
+		<h2 class="c-section-heading">Latest Springer Nature articles</h2>
+		{{#if mostRecent}}
+			<ol>
+				{{#each mostRecent as |article|}}
+					<li>
+						<div class="u-text-bold" data-test="article-title">{{article.title}}</div>
+						<time>{{article.publicationDate}}</time>
+					</li>
+				{{/each}}
+			</ol>
+		{{/if}}
+	</section>
+	{{!-- work-around display:none which doesn't allow svg linearGradient to be shown --}}
+	<div aria-hidden="true" class="u-visually-hidden">
+		{{> illustrations-sprite }}
+	</div>
+{{/main}}

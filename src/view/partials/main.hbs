@@ -1,0 +1,18 @@
+<main id="main-content">
+	<div class="c-page-title-wrapper">
+		<div class="c-page-title">
+			{{#if h1}}
+				<h1 data-test="page-main-heading">{{h1}}</h1>
+			{{/if}}
+		</div>
+	</div>
+	<div class="c-page-content" data-test="main-container">
+		<div class="u-mb-32">
+			{{#banner}}
+				{{>globalStatusMessage}}
+			{{/banner}}
+		</div>
+
+		{{> @partial-block }}
+	</div>
+</main>

@@ -1,0 +1,19 @@
+$breakpoints: (
+	'palm': 300px,
+	'lap': 480px,
+	'portable': 640px,
+	'desk': 875px,
+	'large': 1200px
+);
+
+
+$global-spacing: (
+	'xxs': 4px,
+	'xs': 8px,
+	'sm': 12px,
+	'md': 16px,
+	'lg': 24px,
+	'xl': 36px,
+	'xxl': 48px,
+	'xxxl': 64px
+);

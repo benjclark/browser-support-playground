@@ -1,0 +1,20 @@
+.c-error-card__message {
+	background-color: $context--page-background-color;
+	color: $context--error-color;
+	padding: spacing(4);
+	margin-bottom: spacing(24);
+}
+
+.c-error-card__stack {
+	pre {
+		overflow: scroll;
+		background-color: $context--page-background-color;
+		padding: spacing(16);
+		margin: spacing(16) 0;
+	}
+
+	mark {
+		background-color: $context--focus-color;
+	}
+}
+

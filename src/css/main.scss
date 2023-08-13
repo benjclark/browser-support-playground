@@ -1,0 +1,60 @@
+/**
+ * Core
+ */
+
+@import '@springernature/brand-context/springernature/scss/core';
+
+@supports (display: flex) and
+(display: grid) and
+(selector(:not(.foo))) and
+(selector(:has(.bar))) and
+(--css: variables) and
+(margin-block-start: 1rem) and
+(gap: 1rem) and
+(aspect-ratio: 1 / 1) and
+(object-fit: cover) {
+
+	/**
+	 * Enhanced
+	 */
+
+	@import '@springernature/brand-context/springernature/scss/enhanced';
+
+	// 10-Settings
+	@import '@springernature/global-status-message/scss/10-settings/default';
+	@import '@springernature/global-skip-link/scss/10-settings/springernature';
+	@import '@springernature/global-corporate-footer/scss/10-settings/default';
+
+	// 40-Base
+	@import '40-base/fonts';
+
+	// 50-Components
+	@import '@springernature/global-status-message/scss/50-components/status-message';
+	@import '@springernature/global-skip-link/scss/50-components/skip-link';
+	@import '@springernature/global-corporate-footer/scss/50-components/corporate-footer';
+	@import '50-components/header';
+	@import '50-components/error-card';
+	@import '50-components/section-heading';
+	@import '50-components/status-message';
+	@import '50-components/page';
+	@import '50-components/home-illustration';
+
+	// 60-Utilities
+	@import '@springernature/brand-context/default/scss/60-utilities/spacing';
+	@import '@springernature/brand-context/default/scss/60-utilities/hiding';
+	@import '@springernature/brand-context/default/scss/60-utilities/icons';
+	@import '@springernature/brand-context/default/scss/60-utilities/typography';
+	@import '@springernature/brand-context/default/scss/60-utilities/buttons';
+	@import '@springernature/brand-context/springernature/scss/60-utilities/link-text';
+}
+
+.code {
+	font-family: "Courier New";
+	padding: 48px;
+	background: #eee;
+	color: #000;
+	border-radius: 12px;
+	font-size: .75rem;
+	line-height: 1.4;
+	white-space: pre-line;
+}

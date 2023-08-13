@@ -1,0 +1,20 @@
+{
+  "data": {
+    "researcher": {
+      "profile": {
+        "firstname": "Florent"
+      },
+      "citations": {
+        "total": 203
+      },
+      "publications": {
+        "totalFromSN": 16,
+        "overallUsage": {
+          "overallDownloads": 7236,
+          "overallViews": 3952
+        }
+      }
+    }
+  }
+}
+

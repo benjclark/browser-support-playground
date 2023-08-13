@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="core-browser">
+<head>
+	<script>
+		// JS Detection Script
+		(function (e) {
+			var t = e.documentElement, n = e.implementation;
+			t.className += ' js';
+		})(document)
+	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title data-test="page-title">{{#if title}}{{title}} | Frontend stack example{{else}}Frontend stack example{{/if}}</title>
+
+	<meta name="description" content="Frontend stack example application">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#7b7b7b">
+	<link rel="shortcut icon" href="/img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#8eadbf">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#f0f4f7">
+
+	<link rel="stylesheet" href="/{{assets.main.css}}">
+</head>
+
+<body>
+	<div aria-hidden="true" class="u-display-none u-core-display-none">
+		{{> icons-sprite }}
+	</div>
+
+	{{> header}}
+
+	{{{body}}}
+
+	{{> footer}}
+
+	{{#if liveReload}}
+		<script src="/reload/reload.js"></script>
+	{{/if}}
+</body>
+</html>

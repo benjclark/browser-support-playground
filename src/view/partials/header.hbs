@@ -1,0 +1,17 @@
+<header class="c-header">
+	<a data-test="skip-link" class="c-skip-link" href="#main-content">Skip to content</a>
+	<div class="c-header__content">
+		<a href="/overview" data-test="logo-link">
+			<img class="c-header__logo" role="img" alt="Frontend stack home page" src="/img/logo.svg" data-test="logo-image"/>
+		</a>
+		{{#if snAccountWidget}}
+			{{{snAccountWidget.link}}}
+		{{else}}
+			{{#if user}}
+				{{#if myAccountPageUrl}}
+					<a data-test="my-account-link" href="{{myAccountPageUrl}}">My account</a>
+				{{/if}}
+			{{/if}}
+		{{/if}}
+	</div>
+</header>

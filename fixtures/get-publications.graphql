@@ -1,0 +1,8 @@
+query getPublicationsQuery {
+	publications(snid: "4da7525b-a54d-7801-911a-20469fd3045f_SN",sortMode:{mode:MOST_RECENT,order:DESC},take:3) {
+		id
+		title
+		publicationDate
+		url
+	}
+}

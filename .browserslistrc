@@ -1,0 +1,10 @@
+# For latest version check:
+# https://github.com/springernature/frontend-playbook/blob/master/practices/graded-browser-support.md#browerslist
+
+defaults
+not ie 11
+ff > 66
+chrome > 75
+safari > 11
+edge > 78
+opera > 61
