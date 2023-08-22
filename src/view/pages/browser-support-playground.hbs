@@ -1,10 +1,37 @@
 {{#> main h1=title}}
 
 	<section class="c-page-content-inner">
-		<p>Test this page using Browserstack. This is the browser support playground. The contents of the Sass file that implements this browser support mechanism is:</p>
+		<p>Test this page using Browserstack. The browser should load the enhanced CSS if it supports all of the syntax listed in @supports declarations in the main.scss file. The contents of main.scss is currently:</p>
 	</section>
 	{{#if code}}
 		<div class="code">{{{code}}}</div>
 	{{/if}}
+
+	<p>JavaScript for the enhanced experience is loaded using a CSS custom property <em>--ctm </em> with the following script: </p>
+	<div class="code">
+		var mustardcut = getComputedStyle(document.querySelector('html')).getPropertyValue('--ctm');
+		if (mustardcut) {
+			document.documentElement.classList.add('ctm');
+			window.config = window.config || {};
+			window.config.mustardcut = true;
+			var scriptEl = document.createElement('script');
+			scriptEl.src = 'js/enhanced.js';
+			scriptEl.async = true;
+			document.body.appendChild(scriptEl);
+		}
+	</div>
+
+<script>
+var mustardcut = getComputedStyle(document.querySelector('html')).getPropertyValue('--ctm');
+if (mustardcut) {
+	document.documentElement.classList.add('ctm');
+	window.config = window.config || {};
+	window.config.mustardcut = true;
+	var scriptEl = document.createElement('script');
+	scriptEl.src = 'js/enhanced.js';
+	scriptEl.async = true;
+	document.body.appendChild(scriptEl);
+}
+</script>
 
 {{/main}}

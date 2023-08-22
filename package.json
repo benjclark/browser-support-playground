@@ -93,7 +93,7 @@
     "winston-transport-sentry-node": "^2.7.0"
   },
   "engines": {
-    "node": "^18",
+    "node": "^16",
     "npm": "^8"
   },
   "sasslintConfig": "./node_modules/@springernature/sasslint-config/config/.sass-lint.yml",
